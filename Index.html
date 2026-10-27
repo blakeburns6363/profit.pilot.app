@@ -68,3 +68,4 @@ alert('Backup imported. Find imported records in Saved Sales & Jobs.');
 try{let legacy=JSON.parse(localStorage.getItem(OLD)||'[]');if(Array.isArray(legacy)&&legacy.length&&!localStorage.getItem(KEY)){let j=job();j.name='Previous transactions';j.transactions=legacy.map(x=>({...x,id:uid()}))}}catch(e){}
 resetForm();render();
 </script></body></html>
+
